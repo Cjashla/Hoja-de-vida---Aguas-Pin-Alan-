@@ -1,0 +1,22 @@
+h1 {
+    background-color: #dab7f8;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8f60e7;
+}
+label {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8f61c4;
+}
+button{
+    background-color: #d0b1eb;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8f61c4;
+}
+p{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8f61c4;
+}

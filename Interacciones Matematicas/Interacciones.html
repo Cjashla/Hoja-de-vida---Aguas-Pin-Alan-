@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function realizarOperacion(iteracion) {
+            // Obtener los valores de entrada
+            var valor1 = parseFloat(document.getElementById("valor1").value);
+            var valor2 = parseFloat(document.getElementById("valor2").value);
+
+            // Realizar la operación según la iteración
+            var resultado;
+            switch (iteracion) {
+                case 1:
+                    resultado = valor1 + valor2;
+                    break;
+                case 2:
+                    resultado = valor1 - valor2;
+                    break;
+                case 3:
+                    resultado = valor1 * valor2;
+                    break;
+                case 4:
+                    resultado = valor1 / valor2;
+                    break;
+                case 5:
+                    resultado = valor1 % valor2;
+                    break;
+                default:
+                    resultado = "Iteración no válida";
+                    break;
+            }
+
+            // Mostrar el resultado
+            document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <div id="titulo">
+        <h1>Operaciones Matemáticas</h1>
+    </div>
+
+    <div id="usuario">
+    <label for="valor1">Valor 1:</label>
+    <input type="number" id="valor1" step="any"><br><br>
+
+    <label for="valor2">Valor 2:</label>
+    <input type="number" id="valor2" step="any"><br><br>
+    </div>
+
+    <button onclick="realizarOperacion(1)">Sumar</button>
+    <button onclick="realizarOperacion(2)">Restar</button>
+    <button onclick="realizarOperacion(3)">Multiplicar</button>
+    <button onclick="realizarOperacion(4)">Dividir</button>
+    <button onclick="realizarOperacion(5)">Módulo</button>
+
+    <p id="resultado">Resultado:</p>
+    </center>
+</body>
+</html>
